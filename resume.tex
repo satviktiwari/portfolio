@@ -1,188 +1,201 @@
-\documentclass[a4paper]{MagicalCV}
+\documentclass[a4paper,20pt]{article}
 
-% Removing page numbers
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Change the geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
 
-% Defining your colors
-\definecolor{VividPurple}{HTML}{3E0097}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{VividPurple}
-\colorlet{accent}{VividPurple}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
+\urlstyle{rm}
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-purple}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
 
-% start document
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
 \begin{document}
 
-% Last update time
-\lastupdated
+%----------HEADING-----------------
+\begin{center}
+\textbf{{\huge SATVIK TIWARI}}
+\end{center}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \href{https://www.linkedin.com/in/satviktiwari/}{LinkedIn: linkedin.com/satviktiwari/} & 
+  Email: \href{mailto:satviktiwari.ec19@rvce.edu.in}{satviktiwari.ec19@rvce.edu.in}\\
+  \href{https://satviktiwari.netlify.app}{Portfolio: satviktiwari.netlify.app}  & 
+  Mobile: +91-9098412228 \\
+  \href{https://github.com/satviktiwari}{GitHub: github.com/satviktiwari} &
+  \href{https://drive.google.com/file/d/1LQlHFQqkuVfjBgQ2uICyUJPpx2jUVdDT/view?usp=sharing}{Coding Profiles: Click-Here} \\ 
+  Certifications: \href{https://drive.google.com/file/d/1i43F2_F_sFLirghEWX-SV7maJ8NU8jX7/view?usp=sharing}{Click-Here} \\ 
+\end{tabular*}
 
-% Title name
-\namesection{}{Satvik Tiwari}{
-\phone{9098412228} \email{\href{mailto:satviktiwari.ec19@rvce.edu.in}{satviktiwari.ec19@rvce.edu.in}}}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RV College of Engineering}{Bangalore, India}
+      {Bachelor of Engineering - Electronics and Communication;  CGPA: 8.85}{August 2019 - July 2023}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structures and Algorithms, Database Management System, Computer Networks, Signal Processing and Machine Learning}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Kylo Apps}{Remote}
+    {React Developer Intern}{Jan 2022 - Mar 2022}
+    \resumeItemListStart
+        \resumeItem{Work}
+          {Worked on the development of UI components for React Applications. Built reusable UI components for multiple Web Applications and worked on the re‑building and functional modifications of existing Applications.}
+          \newline
+      \resumeItemListEnd
 
-% Column one
-\begin{minipage}[t]{0.33\textwidth} 
+\vspace{-5pt}
+    \resumeSubheading
+		{Wipro-IISc Research and Innovation Network}{Bangalore, Karnataka}
+		{Software Development and Machine Learning Intern
+}{Sep 2021 -  Feb 2022}
+		\resumeItemListStart
+        \resumeItem{Work}{Worked on the development of Control Systems for Autonomous Vehicle. Developed a Virtual Simulator to simulate car controls using the keyboard. Developed ML‑powered software tool to generate collision free Optical Flow Path for Autonomous Vehicles using OpenCV.}
+		\resumeItemListEnd
 
-% Education
-\cvsection{Education} 
+\resumeSubHeadingListEnd
 
-\subsection{RV College of Engineering}
-\descript{B.E. in Electronics and Communication}
-\cvevent{2019-2023}{Bangalore, India} 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-% \begin{tightemize}
-% \item CGPA: 8.85
-% \end{tightemize}
-CGPA: 8.85
-\sectionsep
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{FRAMEWORK FOR CCTV STORAGE OPTIMIZATION}{ Developed an algorithm and website to optimize the storage
+space of CCTV recordings using the YOLO‑v3 algorithm and
+OpenCV library by removing the redundant CCTV footage
+frames having Euclidean distance lesser than a threshold
+value. The algorithm efficiently reduced the storage space by
+76\% of the existing space without any compromise on the
+quality of the recordings. 
+\newline
+Tech: HTML, CSS, JavaScript, Python, Firebase, OpenCV
+\newline
+\href{https://github.com/satviktiwari/CCTV-Storage-Optimization}{GitHub Repository: Click Here}~~~~ \href{https://cctvframework.netlify.app/}{Live Deployment: Click Here}}
+\vspace{2pt}
+\resumeSubItem{SAG MEASUREMENT AND CIRCLE FITTING ALGORITHM}{Programmed an Algebraic Circle Fitting Algorithm for sag measurement in pipes and fuel rods using Image Analysis of diffracted laser beams. Developed program for sag
+measurement with respect to the slope of coordinates of the
+laser beam and the output screen
+\newline
+Tech: C++, Python, MATLAB, Image, OpenCV
+\newline 
+\href{https://github.com/satviktiwari/Circle-Fitting-and-Sag-Measurement}{GitHub Repository: Click Here}}
+\vspace{2pt}
+\resumeSubItem{SUS MAFIA}{Developed a platform for Sus Mafia NGO to recruit volunteers. Incorporated user-side \& company-side registration, candidate profile viewing feature, real-time chat application and candidate leader board functionality in the application. Added blog writing feature in the application. The project was awarded Runner-Up position in JPMorgan Chase \& Co. Code for Good 2022 event.   
+\newline
+Tech: HTML, CSS, JavaScript, React JS, Node JS, Express, MongoDB, Firebase
+\newline
+\href{https://github.com/satviktiwari/CRUD-Application}{GitHub Repository: Click Here}}
+\vspace{2pt}
+\resumeSubItem{COVID DETECTION TOOL}{ Developed a website for symptoms‑based COVID detection
+and apython application for chest x‑ray scan‑based COVID
+detection. Used CNN algorithm for Image Processing of
+x‑ray scan. Used Naïve Bayes classifier for
+symptoms‑based detection and programmed in JavaScript.
+\newline
+Tech: HTML, CSS, JavaScript, Python
+\newline
+\href{https://github.com/satviktiwari/COVID-Detection-Tool}{GitHub Repository: Click Here}~~~~ \href {https://covid19-detection.netlify.app}{Live Deployment: Click Here}}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
 
-\subsection{Atomic Energy Central School, Indore}
-\descript{Higher Secondary}
-\cvevent{2007-2019}{Indore, MP} 
-Class XII: 93.4\% (CBSE 2019)\\
-Class X: CGPA 10 (CBSE 2017)
-\sectionsep
+%-----------SKILLS-----------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Programming Languages}{ C, C++, Python}
+	\resumeSubItem{Web Development}{ HTML, CSS, JavaScript, ReactJS, NodeJS, Express}
+	\resumeSubItem{Database}{ MySQL, MongoDB, Firebase}
+	\resumeSubItem{Miscellaneous}{ Git, GitHub, Netlify, Latex, VS Code}
+	\resumeSubItem{Soft Skills}{ Problem Solving, Design Thinking, Public Speaking, Team Work, Leadership, Decision Making}
 
-% Links
-\cvsection{Links}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Programming Profiles}
+\begin{description}[font=$\bullet$]
+\item {LeetCode: 3-star profile, 1592 rating (max), 4 batches earned, 600+ problems solved with nearly 70\% accuracy.}
+\vspace{-5pt}
+\item {Geeks for Geeks: 4th rank in RVCE GFG Portal among 3000+ coders, 600+ problems solved, 1750 GFG Score.}
+\vspace{-5pt}
+\item {CodeChef: 3-star profile, 1693 rating, secured 130 rank in CodeChef Long Challenge 2022 among 15852 participants.}
+\end{description}
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {Runners‑Up at Code for Good‑2022 hackathon organized by JP Morgan Chase \& Co. (June 4‑5, 2022)}
 
-GitHub: \href{https://github.com/satviktiwari}{\bf satviktiwari} \\
-LinkedIn: \href{https://www.linkedin.com/in/satviktiwari/}{\bf satviktiwari} \\
-Portfolio: \href{https://satviktiwari.netlify.app/}{\bf satviktiwari} \\
-Coding Profiles: \href{https://docs.google.com/document/d/1w6rH-2rIib-OvnE8KS2qha2VeT3b99C3/edit?usp=sharing&ouid=109461083264354671311&rtpof=true&sd=true}{\bf here} \\
-Certifications: \href{https://docs.google.com/document/d/19C62fVOak_8UI2YRLLVLrC4yf_gmog9Q/edit?usp=sharing&ouid=109461083264354671311&rtpof=true&sd=true}{\bf here} 
-\sectionsep
+\end{description}
 
-% Skills
-\cvsection{Skills}
+\vspace{-5pt}
+\section{Certifications}
+\begin{description}[font=$\bullet$]
+\item {Python Data Structures (Coursera)}
+\vspace{-5pt}
+\item {Problem Solving Basic and Intermediate (HackerRank)}
+\vspace{-5pt}
+\item {The Joy of Computing using Python (NPTEL)}
+\vspace{-5pt}
+\item {SQL Programming (HackerRank)}
+\end{description}
 
-\subsection{Programming Languages}
-C \textbullet{}  C++ \textbullet{}  Python
-\sectionsep
-\subsection{Web Development}
-HTML \textbullet{} CSS \textbullet{} JavaScript \textbullet{} React JS \textbullet{} Node JS \textbullet{} Express
-\sectionsep
-\subsection{Database}
-MySQL \textbullet{} MongoDB \textbullet{} Firebase 
-\sectionsep
-\subsection{Miscellaneous}
-Git \textbullet{} GitHub \textbullet{} Netlify\textbullet{} Latex
-\sectionsep 
-% \subsection{Soft Skills}
-%  Problem Solving \textbullet{} Design Thinking \textbullet{} Public Speaking \textbullet{} Team Work \textbullet{}  Leadership \textbullet{} Decision Making
-% \sectionsep 
-
-\cvsection{Certifications} 
- \vspace{\topsep}\\ % Hacky fix for awkward extra vertical space
-Python Data Structures (Coursera)\\
-Problem Solving Basic and Intermediate (HackerRank)\\
-The joy of computing using Python (NPTEL)
-
-% Honors
-\cvsection{Coding Profiles} 
-
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
- \justify \textbf{LeetCode}: 3 star profile, 1592 rating (max), 4 batches earned, 600+ problems solved with nearly 70 \% accuracy.
-
-
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
- \justify \textbf{GeeksForGeeks}: 4th rank in RVCE GFG Portal among 3000+ coders, 600+ problems solved, 1750 GFG Score (as of June 2022).
-
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\justify \textbf{CodeChef}: 3 star profile, 1658 rating in Div-2, secured 130 rank in CodeChef January Long Challenge 2022 among 15852 participants.
-
-
-% Column two
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.66\textwidth} 
-
-% Experience
-\cvsection{Experience}
-
-\runsubsection{React Developer Intern} \\
-\descript{Kylo Apps}
-\cvevent{Jan 2022 – Mar 2022}{Indore, MP} 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item \justify Worked on the development of UI components for React Applications. Built reusable UI components for multiple Web Applications and worked on the re-building and functional modifications of existing Applications.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Software Development and ML Intern} \\
-\descript{Wipro-IISc Research and Innovation Network}
-\cvevent{Sep 2021 – Feb 2022}{Bangalore, KA} 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\justify
-\begin{tightemize}
-\item Worked on the development of Control Systems for Autonomous Vehicle. Developed a Virtual Simulator to simulate car controls using the keyboard. Developed ML-powered software tool to generate collision-free Optical Flow Path for Autonomous Vehicles using OpenCV.
-\end{tightemize}
-\sectionsep
-
-% Competitions
-\cvsection{Projects}
-
-\runsubsection{\bf Framework for CCTV Storage Optimization }
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\justify
-\begin{tightemize}
-\item \href{https://github.com/satviktiwari/Minor-Project}{\bf Code Link} \textbullet{} \href{https://cctvprocessing.netlify.app/}{\bf Website Link}
-\item Developed an algorithm and website to optimize the storage space of CCTV cameras using the YOLO-v5 algorithm and OpenCV library by removing the redundant CCTV footage frames having Euclidean distance lesser than a threshold value. 
-\item The algorithm efficiently reduced the storage space of the recordings to about one-fourth of the existing space without any compromise on the quality of the recordings. 
-\item  Tech Stack: HTML, CSS, JavaScript, Python, Firebase, OpenCV
-\end{tightemize}
-\sectionsep
-
-\runsubsection{\bf Sag Measurement and Circle Fitting Algorithm}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\justify
-\begin{tightemize}
-\item \href{https://github.com/satviktiwari/Minor-Project}{\bf Code Link} 
-\item Programmed an Algebraic Circle Fitting Algorithm for sag measurement in pipes and fuel rods using Image Analysis of diffracted laser beams. Developed program for sag measurement with
-respect to the slope of coordinates of the laser beam and output screen.
-\item Tech Stack: C++, Python, MATLAB, Image, OpenCV
-\end{tightemize}
-\sectionsep
-
-\runsubsection{\bf CRUD Application: User Interaction Platform} 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\justify
-\begin{tightemize}
-\item \href{https://github.com/satviktiwari/CRUD-Application}{\bf Code Link}
-\item Developed a CRUD Application using MERN Stack. Used React JS to design the UI of the app and Express + Node JS in the back-end to develop REST APIs for performing CRUD operations. Added blogging feature for user interaction on the tool. Used MongoDB as the database.
-\item Tech Stack: HTML, CSS, JavaScript, React JS, Node JS, Express, MongoDB
-\end{tightemize}
-\sectionsep
-
-\cvsection{Achievements}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\justify
-\begin{tightemize} 
-\item Runners-Up at Code for Good-2022 hackathon organized by JPMorgan Chase \& Co. (June 4-5, 2022)
-\item TechGig Code Gladiators 2021 Finalist
-\item Cisco Campus Ambassador at RVCE (April 2021 to March 2023)
-\item Content Creator for Sports section at Aspire Club, RVCE
-\end{tightemize}
-\sectionsep
-
-
-\end{minipage} 
-\end{document}  
+\end{document}
