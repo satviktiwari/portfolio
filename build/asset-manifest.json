@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a57cffcb.chunk.css",
+    "main.js": "/static/js/main.4d99e949.chunk.js",
+    "main.js.map": "/static/js/main.4d99e949.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.62ae8402.js",
+    "runtime-main.js.map": "/static/js/runtime-main.62ae8402.js.map",
+    "static/js/2.91971dee.chunk.js": "/static/js/2.91971dee.chunk.js",
+    "static/js/2.91971dee.chunk.js.map": "/static/js/2.91971dee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a57cffcb.chunk.css.map": "/static/css/main.a57cffcb.chunk.css.map",
+    "static/js/2.91971dee.chunk.js.LICENSE.txt": "/static/js/2.91971dee.chunk.js.LICENSE.txt",
+    "static/media/aecs.c8218dbf.png": "/static/media/aecs.c8218dbf.png",
+    "static/media/badge_ps.427b46df.png": "/static/media/badge_ps.427b46df.png",
+    "static/media/cctv.cb619a5e.png": "/static/media/cctv.cb619a5e.png",
+    "static/media/covid-detection-tool.464c921c.png": "/static/media/covid-detection-tool.464c921c.png",
+    "static/media/draft.cbc488ec.svg": "/static/media/draft.cbc488ec.svg",
+    "static/media/home-solid.831db11d.svg": "/static/media/home-solid.831db11d.svg",
+    "static/media/lc_75.1ec064b2.png": "/static/media/lc_75.1ec064b2.png",
+    "static/media/lc_algo.6ff7a37b.png": "/static/media/lc_algo.6ff7a37b.png",
+    "static/media/lc_apr.ca15562e.png": "/static/media/lc_apr.ca15562e.png",
+    "static/media/lc_ds.d39fbf2b.png": "/static/media/lc_ds.d39fbf2b.png",
+    "static/media/lc_july.dd925fb5.png": "/static/media/lc_july.dd925fb5.png",
+    "static/media/logo.ecb09118.svg": "/static/media/logo.ecb09118.svg",
+    "static/media/rvce.57f2b1e2.png": "/static/media/rvce.57f2b1e2.png",
+    "static/media/sag.f7d04c98.png": "/static/media/sag.f7d04c98.png",
+    "static/media/satvik.e0ada150.png": "/static/media/satvik.e0ada150.png",
+    "static/media/sceduled.581f6358.svg": "/static/media/sceduled.581f6358.svg",
+    "static/media/social.90efc33f.svg": "/static/media/social.90efc33f.svg",
+    "static/media/starred.3f5eb997.svg": "/static/media/starred.3f5eb997.svg",
+    "static/media/sus-mafia.08a06b08.png": "/static/media/sus-mafia.08a06b08.png",
+    "static/media/wirin-logo.cfdd459f.png": "/static/media/wirin-logo.cfdd459f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62ae8402.js",
+    "static/js/2.91971dee.chunk.js",
+    "static/css/main.a57cffcb.chunk.css",
+    "static/js/main.4d99e949.chunk.js"
+  ]
+}
